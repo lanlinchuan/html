@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格案例</title>
+</head>
+<body>
+    <!--border属性为表格的边框，值表示边框的粗细-->
+    <!--cellspacing:定义是单元格之间的距离，cellpadding:定义单元格边框和文本之间的距离(值为0时，文本靠左贴边显示)-->
+    <!--align:水平方向对齐方式。值有：left(靠左对齐,默认)，center(居中对齐)，right(靠右对齐)-->
+    <!--bgcolor:修饰表格的背景颜色。bordercolor:修饰表格边框颜色-->
+    <table border="2" width="500" height="150" cellspacing="0" cellpadding="0"
+    align="center" bgcolor="red" bordercolor="green">
+        <!--tr标签是table row的缩写，表格行-->
+        <!--属性height:设置行高，在表格总高固定时，其余行均分剩余高度。tr中没有单元格宽度属性-->
+        <!--tr中的属性bgcolor：用来设置tr的背景颜色，会影响整行的背景颜色-->
+        <!--tr和table标签都bgcolor属性，以就近原则渲染或者说子标签渲染的优先级高于父标签-->
+        <!--tr中align属性:文本水平对齐方式。值有：left(左侧对齐，默认)，center(居中对齐)，right(右侧对齐)-->
+        <!--tr中valign属性:文本垂直对齐方式。值有：top(顶部对齐)，middle(居中对齐，默认)，bottom(底部对齐)-->
+        <tr height="100" bgcolor="grey" align="right" valign="bottom">
+            <th>序号</th><!--th标签是table header cell的缩写，表头单元格，将表格第一行文本加粗-->
+            <th>王者英雄</th>
+            <th>王者性别</th>
+            <th>所属位置</th>
+            <th>详情</th>
+        </tr>
+        <tr>
+            <td>1</td><!--td标签是table data cell的缩写，表格数据单元-->
+            <td>王昭君</td>
+            <td>女</td>
+            <td>中路</td>
+            <td><a href="">点击查看详情</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>亚瑟</td>
+            <td>男</td>
+            <td>对抗路</td>
+            <td><a href="">点击查看详情</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>虞姬</td>
+            <td>女</td>
+            <td>发育路</td>
+            <td><a href="">点击查看详情</a></td>
+        </tr>
+    </table>
+</body>
+</html>
